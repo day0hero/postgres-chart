@@ -28,12 +28,12 @@ service:
 readinessProbe:
   exec:
     command:
-    - /usr/libexec/container-check
+    - /usr/libexec/check-container
 
 livenessProbe:
   exec:
     command:
-    - /usr/libexec/container-check
+    - /usr/libexec/check-container
     - --live
 
 # Additional volumes on the output Deployment definition.
